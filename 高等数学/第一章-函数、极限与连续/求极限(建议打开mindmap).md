@@ -23,6 +23,7 @@ $$\sin {x}  \rightarrow{x} $$
 $$\tan{x} \to x$$
 $$\arcsin{x} \to x$$
 $$\arctan{x} \to x$$
+$$1-\cos{x}\to \frac{1}{2}x^2$$
 
 
 ##### 找1
@@ -32,11 +33,19 @@ $$\arctan{x} \to x$$
 ##### 幂指项考虑用重要极限
 $$\lim_{x\to\infty}(\frac{1}{x} +1)^x = e$$
 ##### 等价无穷小
+注意前提条件$\lim_{x\to0}$
 $$ (a^x - 1) \rightarrow{x\ln{a}} $$
+特殊情况为 $e^x - 1\to x$
 $$ \log_{a}^{1+x}  \to \frac{x}{\ln{a}} $$
-$$ (1+x)^a -1 \rightarrow{ax} $$
-$$\ln (1+x)  \rightarrow{x} $$
-$$\sqrt[n]{1+x} -1  \rightarrow{\frac{x}{n}} $$
+特殊情况为 $\ln{(x-1)} \to x$
+$$ \color{aqua}(1+x)^a -1 \rightarrow{ax} $$
+$$\color{aqua}\sqrt[n]{1+x} -1  \rightarrow{\frac{x}{n}} $$
+
+### 幂次数出现x
+重要极限$$\lim_{x\to\infty}(\frac{1}{x}+1)^x$$
+变式   $x\to0 \Leftrightarrow \frac{1}{x}\to\infty$
+$$\lim_{x\to0}(x+1)^\frac{1}{x}$$
+
 ### 求带有阶乘
 $$\lim_{x\to\infty} \frac{a^n}{n!}$$
 ##### 展开后，用无穷小性质求解（有界乘无穷小为无穷小）
@@ -55,4 +64,5 @@ $$\frac{x_{n+1}}{x_{n}}$$
 ## 超偏门
 
 ##### lim下标为自变量，换元 x = t^n!
-$$\lim_{x\to{1}}\frac{(1-\sqrt[1]{x})(1-\sqrt[2]{x})...(1-\sqrt[n]{x})}{(1-x)^{n-1}}$$
+$$\color{red}\lim_{x\to{1}}\frac{(1-\sqrt[1]{x})(1-\sqrt[2]{x})...(1-\sqrt[n]{x})}{(1-x)^{n-1}}$$
+
